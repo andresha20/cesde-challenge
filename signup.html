@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/signup.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/secondary.css">
+    <link rel="icon" href="img/logo2.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+            <div>
+              <img src="./assets/img/logo.png" alt="Logo" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="box">
+          <!-------------Login Box------------>
+          <div class="box-login" id="login">
+            <div class="top-header">
+              <h3>Hello Again</h3>
+              <small>We are happy to have you back</small>
+            </div>
+            <div class="input-group">
+              <div class="input-field">
+                <input type="text" class="input-box" id="logEmail" required />
+                <label for="logEmail">Email Address</label>
+              </div>
+              <div class="input-group">
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="input-box"
+                    id="logPassword"
+                    required
+                  />
+                  <label for="logPassword">Password</label>
+                  <div class="eye-area">
+                    <div class="eye-box" onclick="myLogPasword">
+                      <i class="fa-regular fa-eye" id="eye"></i>
+                      <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="remember">
+                  <input type="checkbox" id="formCheck" class="Check" />
+                  <label for="formCheck">&nbsp;Remember me</label>
+                </div>
+                <div class="input-field">
+                  <input type="submit" class="input-submit" value="Sign In" />
+                </div>
+                <div class="forgot">
+                  <a href="#">Forgot password</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-----------Register--------------->
+  
+          <div class="box-register" id="register">
+            <div class="top-header">
+              <h3>Sign Up, Now</h3>
+              <small>We are happy to have you with us.</small>
+            </div>
+            <div class="input-group">
+              <div class="input-field">
+                <input type="text" class="input-box" id="regUser" required />
+                <label for="regUser">Username</label>
+              </div>
+              <div class="input-field">
+                <input type="text" class="input-box" id="regEmail" required />
+                <label for="regEmail">Email address</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="input-box"
+                  id="regPassword"
+                  required
+                />
+                <label for="regPassword">Password</label>
+                <div class="eye-area">
+                  <div class="eye-box" onclick="myRegPassword()">
+                    <i class="fa-regular fa-eye" id="eye-2"></i>
+                    <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="remember">
+                <input type="checkbox" id="formCheck-2" class="check" />
+                <label for="formCheck-2"> Remember Me</label>
+              </div>
+              <div class="input-field">
+                <input type="submit" class="input-submit" value="Sign In" />
+              </div>
+            </div>
+          </div>
+  
+          <!-------------switch-------------->
+  
+          <div class="switch">
+            <a href="#" class="login" onclick="login()">Login</a>
+            <a href="#" class="register" onclick="register()">Register</a>
+            <div class="btn-active" id="btn"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
