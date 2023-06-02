@@ -9,6 +9,7 @@
 }
 
 .login-button {
+    text-decoration: none;
     background-color: #1AA7EC;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -37,6 +38,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
 }
 
 .banner::after {
